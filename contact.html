@@ -93,15 +93,8 @@ html {
 }
 </style>
 
-
-
-
-
   </head>
 <body>
-
-
-
 
 <nav>
   <a href="index.html">Home</a>
@@ -110,15 +103,24 @@ html {
 </nav>
 
 
-
-
-
-  <div class="container">
-
-    <h1 id="home">HOME</h1>
-    <p>Welcome to my first webpage. I am learning HTML step by step.</p>
-
-
+  <h2>Contact Me</h2>
+<form>
+  <p>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required>
+  </p>
+  <p>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required>
+  </p>
+  <p>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30" required></textarea>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 
 </body>
 </html>
