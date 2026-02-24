@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html>
-   
-</div>   
-  <head>
-    <title>my-website</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
-  <body>
+  <!-- Header will be loaded here -->
+  <div id="header"></div>
 
-<nav>
-<div id="header"></div>
-</nav>
+  <!-- Page content -->
+  <div class="container">
+    <h1>Contact Me</h1>
+    <form>
+      <p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+      </p>
+      <p>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+      </p>
+      <p>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30" required></textarea>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+  </div>
 
+  <!-- Footer will be loaded here -->
+  <div id="footer"></div>
 
-  <h1>Contact Me</h1>
-<form>
-  <p>
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required>
-  </p>
-  <p>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required>
-  </p>
-  <p>
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="30" required></textarea>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-
-<div id="footer"></div>
-
-<script src="main.js"></script>
+  <!-- JavaScript -->
+  <script src="main.js"></script>
 
 </body>
 </html>
