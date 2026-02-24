@@ -1,6 +1,6 @@
 // Load header
 fetch("header.html")
-  .then(response => response.text())
+  .then(res => res.text())
   .then(data => {
     document.getElementById("header").innerHTML = data;
 
@@ -14,11 +14,13 @@ fetch("header.html")
         link.classList.add("active");
       }
     });
-  });
+  })
+  .catch(err => console.log("Header fetch failed:", err));
 
 // Load footer
 fetch("footer.html")
-  .then(response => response.text())
+  .then(res => res.text())
   .then(data => {
     document.getElementById("footer").innerHTML = data;
-  });
+  })
+  .catch(err => console.log("Footer fetch failed:", err));
