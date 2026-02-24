@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // Load shared header
+// Load shared header
 fetch("header.html")
   .then(res => res.text())
   .then(data => {
@@ -12,10 +12,7 @@ fetch("header.html")
 
     links.forEach(link => {
       const href = link.getAttribute("href");
-      if (
-        href === currentPage ||
-        (currentPage === "" && href === "index.html")
-      ) {
+      if (href === currentPage || (currentPage === "" && href === "index.html")) {
         link.classList.add("active");
       }
     });
