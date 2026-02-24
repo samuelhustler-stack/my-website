@@ -129,3 +129,17 @@ footer {
     width: 100%;
   }
 }
+
+
+.hero {
+  height: 400px;
+  background-image: url("Test Image 1.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
