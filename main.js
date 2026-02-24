@@ -1,8 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-// Load shared header
+// Load header
 fetch("header.html")
-  .then(res => res.text())
+  .then(response => response.text())
   .then(data => {
     document.getElementById("header").innerHTML = data;
 
@@ -18,9 +16,9 @@ fetch("header.html")
     });
   });
 
-// Load shared footer
+// Load footer
 fetch("footer.html")
-  .then(res => res.text())
+  .then(response => response.text())
   .then(data => {
     document.getElementById("footer").innerHTML = data;
   });
