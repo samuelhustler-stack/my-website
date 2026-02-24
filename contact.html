@@ -91,15 +91,23 @@ form button:hover {
 html {
   scroll-behavior: smooth;
 }
+
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
 </style>
 
   </head>
 <body>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
+<div id="header"></div>
 </nav>
 
 
@@ -121,6 +129,23 @@ html {
     <button type="submit">Send</button>
   </p>
 </form>
+
+<div id="footer"></div>
+
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
 
 </body>
 </html>
